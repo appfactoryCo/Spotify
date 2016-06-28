@@ -1,0 +1,6 @@
+<resources>
+    <string name="app_name">Spotify</string>
+    <string name="top10">Top 10 Tracks</string>
+    <string name="search">Search for Artist</string>
+    <string name="title_activity_search_">Search_Activity</string>
+</resources>
