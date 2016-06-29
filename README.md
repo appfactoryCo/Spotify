@@ -41,7 +41,7 @@ public interface Artists_Interface {
 
 **Step 3:** 
 
-• In Artists_Activity, when you type a search term and press the done button on the keyboard, the text gets passed to loadJSON() 
+• In [Artists_Activity](https://github.com/appfactoryCo/Spotify/blob/master/app/src/main/java/appfactory/spotify/Activities/Artists_Activity.java), when you type a search term and press the done button on the keyboard, the text gets passed to loadJSON() 
 method. 
 In this method, first you create a Retrofit2 object and pass it
 the base url, which is https://api.spotify.com and add converter factory for serialization and deserialization of objects.
@@ -135,7 +135,7 @@ We get the artist's id as an extra from Artists_Data.Item class when we click th
             }
         });
 ```
-and the "items" object is declared in the Artist_Adapter
+and the "items" object is declared in the [Artist_Adapter](https://github.com/appfactoryCo/Spotify/blob/master/app/src/main/java/appfactory/spotify/Adapters/Artists_Adapter.java)
 ```javascript
 List<Artists_Data.Item> items;
 ```
@@ -200,14 +200,14 @@ occurred when talking to the server, creating the request, or processing the res
 ##Loading Images
 We use Picasso to fetch images and load them into views. Picasso is a powerful library that will handle image
 loading and caching
-In the Artists_Adapter, we have
+In the [Artists_Adapter](https://github.com/appfactoryCo/Spotify/blob/master/app/src/main/java/appfactory/spotify/Adapters/Artists_Adapter.java), we have
 ```javascript
 String imgUrl = items.get(position).getImages().get(0).getUrl();
             Picasso.with(context).load(imgUrl).into(viewHolder.imageView);
 ```
 We get the image url from items object mentioned before.
 
-In the Track_Adapter, we have
+In the [Track_Adapter](https://github.com/appfactoryCo/Spotify/blob/master/app/src/main/java/appfactory/spotify/Adapters/Track_Adapter.java), we have
 ```javascript
 String imgUrl = tracks.get(position).getAlbum().getImages().get(0).getUrl();
             Picasso.with(context).load(imgUrl).into(viewHolder.imageView);
