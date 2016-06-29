@@ -62,7 +62,7 @@ our query and type and assign it to the call.
 Call<Artists_Data> call = apiRequest.getArtists(SEARCH_TERM, "artist"); // pass query to the endpoint
 ```
 • Asynchronously send the request using enqueue(Callback<T> callback) method and notify of its response or if an error
-occurred when talking to the server, creating the request, or processing the response. If we get a good response, we can get the data as serialized java objects and put them in items list.
+occurred when talking to the server, creating the request, or processing the response. If we get a good response, we can get the data as serialized java objects and put them in items list and add them to the adapter using a for loop.
 ```javascript
 call.enqueue(new Callback<Artists_Data>() {
             @Override
@@ -163,7 +163,7 @@ interface and pass it track id that we got as an extra and assign it to the Retr
 Call<Track_Data> call = apiRequest.getTracks(id); // pass id parameter to the endpoint
 ```
 • Asynchronously send the request using enqueue(Callback<T> callback) method and notify of its response or if an error
-occurred when talking to the server, creating the request, or processing the response. If we get a good response, we can get the data as serialized java objects and put them in tracks list.
+occurred when talking to the server, creating the request, or processing the response. If we get a good response, we can get the data as serialized java objects and put them in tracks list and add them to the adapter using a for loop.
 ```javascript
  call.enqueue(new Callback<Track_Data>() {
             @Override
