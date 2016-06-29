@@ -23,7 +23,7 @@ Create a Pojo class to deserialize the items in the response.
 Deserialization basically means that in this JSON response, we have "artists" array and inside it there are "href" string and "items" list. We want to convert them into java objects that can be used in our app to access the data.
 
 We can use http://www.jsonschema2pojo.org to generate 
-the pojo classes that will deserialize these items for us. Artist_Data and Track_Data classes are our generated pojo classes.
+the pojo classes that will deserialize these items for us. [Artist_Data](../Pojo/Artists_Data.java) and [Track_Data](../Pojo/Track_Data.java) classes are our generated pojo classes.
 
 
 **Step 2:** 
