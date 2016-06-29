@@ -213,7 +213,7 @@ In the [Track_Adapter](https://github.com/appfactoryCo/Spotify/blob/master/app/s
 String imgUrl = tracks.get(position).getAlbum().getImages().get(0).getUrl();
             Picasso.with(context).load(imgUrl).into(viewHolder.imageView);
 ```
-The "tracks" object is declared earlier in the adapter 
+The "tracks" object is declared earlier in the adapter as
 ```javascript
 List<Track_Data.Track> tracks;
 ```
