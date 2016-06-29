@@ -145,6 +145,7 @@ It is a list of items each of which has its own serialized data like name, id, i
 **Step 3:** 
 
 In the [Track_Activity](https://github.com/appfactoryCo/Spotify/blob/master/app/src/main/java/appfactory/spotify/Activities/Track_Activity.java), we call loadJSON(String id) method to populate the listview with top ten tracks of the selected artist.
+
 • We create Retrofit2 object as before
 ```javascript
  Retrofit retrofit = new Retrofit.Builder()
