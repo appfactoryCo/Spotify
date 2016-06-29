@@ -1,11 +1,23 @@
 # Spotify
-The app allows you to search for artists on Spotify, display their top ten tracks, and play the tracks.
+The app queries the Spotify web API to fetch artist and track data and populate list views. You can search for artists on Spotify, display their top ten tracks, and play the tracks. It uses Retrofit2 to handle HTTP requests and deserializing the JSON response. It uses Picsso library to handle loading and caching images. 
 
 ##Searching for Artists
-**Step 1:**
 
-Let's say you need to search for Beyonce as an artist, and get the following JSON response:
+We'll need to modify the build.gradle file and add Retrofit2 and Picasso dependencies. These modifications will happen in the build.gradle file, not the project root directory.
+```javascript
+dependencies { 
+    // squareup libraries
+    compile 'com.squareup.picasso:picasso:2.5.2' 
+    compile 'com.squareup.retrofit2:retrofit:2.0.2'
+    compile 'com.squareup.retrofit2:converter-gson:2.0.2' 
+}
+```
+
+Now, Let's say you want to search for Beyonce as an artist, and got the following JSON response:
 https://api.spotify.com/v1/search?q=Beyonce&type=artist
+
+
+**Step 1:**
 
 Create a Pojo class to deserialize the items in the response. 
 Deserialization basically means that in this JSON response, we have "artists" array and inside it "href" string and "items" 
