@@ -158,7 +158,7 @@ In the [Track_Activity](https://github.com/appfactoryCo/Spotify/blob/master/app/
 final Track_Interface apiRequest = retrofit.create(Track_Interface.class);
 ```
 • Create Retrofit2 call object that sends a request to a the webserver and returns a response. We call getTracks(id) method in the 
-interface and pass it track id we got as an extra and assign it to the Retrofit2 call object.
+interface and pass it track id that we got as an extra and assign it to the Retrofit2 call object.
 ```javascript
 Call<Track_Data> call = apiRequest.getTracks(id); // pass id parameter to the endpoint
 ```
