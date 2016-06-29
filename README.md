@@ -20,7 +20,7 @@ https://api.spotify.com/v1/search?q=Beyonce&type=artist
 **Step 1:**
 
 Create a Pojo class to deserialize the items in the response. 
-Deserialization basically means that in this JSON response, we have "artists" array and inside it "href" string and "items" 
+Deserialization basically means that in this JSON response, we have "artists" array and inside it there are "href" string and "items" 
 list, and we want to convert them into java objects that can be it in our app to access the data. We can use http://www.jsonschema2pojo.org to generate 
 the pojo classes that will deserialize these items for us. Artist_Data and Track_Data are our pojo classes.
 
