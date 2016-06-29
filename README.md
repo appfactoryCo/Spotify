@@ -1,5 +1,5 @@
 # Spotify
-This app queries the Spotify web API to fetch artist and track data and populate list views. You can search for artists on Spotify, display their top ten tracks, and play the tracks. It uses Retrofit2 to handle HTTP requests and deserializing the JSON response. It uses Picsso library to handle loading and caching images. 
+This app queries the Spotify web API to fetch artist and track data and populate list views. You can search for artists on Spotify, display their top ten tracks, and play the tracks. It uses Retrofit2 to handle HTTP requests and deserialize the JSON response. It uses Picsso library to handle loading and caching images. 
 
 ##Searching for Artists
 
