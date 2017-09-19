@@ -10,37 +10,7 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="796a53d6-d1dd-4502-8ecb-ba314266f0de" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/runConfigurations.xml" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/src/main/java/appfactory/spotify/Activities/Artists_Activity.java" afterPath="$PROJECT_DIR$/src/main/java/appfactory/spotify/activity/ArtistsActivity.java" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/src/main/java/appfactory/spotify/Activities/Play_Activity.java" afterPath="$PROJECT_DIR$/src/main/java/appfactory/spotify/activity/PlayActivity.java" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/src/main/java/appfactory/spotify/Activities/Splash_Screen.java" afterPath="$PROJECT_DIR$/src/main/java/appfactory/spotify/activity/SplashScreen.java" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/src/main/java/appfactory/spotify/Activities/Track_Activity.java" afterPath="$PROJECT_DIR$/src/main/java/appfactory/spotify/activity/TrackActivity.java" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/src/main/java/appfactory/spotify/Adapters/Artists_Adapter.java" afterPath="$PROJECT_DIR$/src/main/java/appfactory/spotify/adapter/ArtistsAdapter.java" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/src/main/java/appfactory/spotify/Adapters/Track_Adapter.java" afterPath="$PROJECT_DIR$/src/main/java/appfactory/spotify/adapter/TrackAdapter.java" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/src/main/java/appfactory/spotify/Interfaces/Artists_Interface.java" afterPath="$PROJECT_DIR$/src/main/java/appfactory/spotify/interfaces/ArtistsInterface.java" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/src/main/java/appfactory/spotify/Interfaces/Track_Interface.java" afterPath="$PROJECT_DIR$/src/main/java/appfactory/spotify/interfaces/TrackInterface.java" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/src/main/java/appfactory/spotify/Pojo/Artists_Data.java" afterPath="$PROJECT_DIR$/src/main/java/appfactory/spotify/pojo/ArtistsData.java" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/src/main/java/appfactory/spotify/Pojo/Track_Data.java" afterPath="$PROJECT_DIR$/src/main/java/appfactory/spotify/pojo/TrackData.java" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/src/main/java/appfactory/spotify/Utilities/Constants.java" afterPath="$PROJECT_DIR$/src/main/java/appfactory/spotify/utils/Constants.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/libraries/animated_vector_drawable_23_3_0.xml" afterPath="$PROJECT_DIR$/.idea/libraries/animated_vector_drawable_23_3_0.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/libraries/appcompat_v7_23_3_0.xml" afterPath="$PROJECT_DIR$/.idea/libraries/appcompat_v7_23_3_0.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/libraries/cardview_v7_23_3_0.xml" afterPath="$PROJECT_DIR$/.idea/libraries/cardview_v7_23_3_0.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/libraries/design_23_3_0.xml" afterPath="$PROJECT_DIR$/.idea/libraries/design_23_3_0.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/libraries/spotify_auth_1_0_0_beta12.xml" afterPath="$PROJECT_DIR$/.idea/libraries/spotify_auth_1_0_0_beta12.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/libraries/spotify_player_1_0_0_beta12.xml" afterPath="$PROJECT_DIR$/.idea/libraries/spotify_player_1_0_0_beta12.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/libraries/support_v4_23_3_0.xml" afterPath="$PROJECT_DIR$/.idea/libraries/support_v4_23_3_0.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/libraries/support_vector_drawable_23_3_0.xml" afterPath="$PROJECT_DIR$/.idea/libraries/support_vector_drawable_23_3_0.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/misc.xml" afterPath="$PROJECT_DIR$/.idea/misc.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/AndroidManifest.xml" afterPath="$PROJECT_DIR$/src/main/AndroidManifest.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/res/layout-land/activity_artists.xml" afterPath="$PROJECT_DIR$/src/main/res/layout-land/activity_artists.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/res/layout-land/activity_play.xml" afterPath="$PROJECT_DIR$/src/main/res/layout-land/activity_play.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/res/layout-land/activity_splash.xml" afterPath="$PROJECT_DIR$/src/main/res/layout-land/activity_splash.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/res/layout-land/activity_track.xml" afterPath="$PROJECT_DIR$/src/main/res/layout-land/activity_track.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/res/layout/activity_artists.xml" afterPath="$PROJECT_DIR$/src/main/res/layout/activity_artists.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/res/layout/activity_play.xml" afterPath="$PROJECT_DIR$/src/main/res/layout/activity_play.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/res/layout/activity_splash.xml" afterPath="$PROJECT_DIR$/src/main/res/layout/activity_splash.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/res/layout/activity_track.xml" afterPath="$PROJECT_DIR$/src/main/res/layout/activity_track.xml" />
     </list>
     <ignored path="app.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -72,28 +42,25 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="AndroidManifest.xml" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/AndroidManifest.xml">
-          <provider editor-type-id="android-manifest">
-            <state />
-          </provider>
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="390">
-              <caret line="26" column="12" lean-forward="false" selection-start-line="26" selection-start-column="12" selection-end-line="26" selection-end-column="42" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
       <file leaf-file-name="ArtistsActivity.java" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/main/java/appfactory/spotify/activity/ArtistsActivity.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="1896">
-              <caret line="158" column="13" lean-forward="true" selection-start-line="158" selection-start-column="13" selection-end-line="158" selection-end-column="13" />
+            <state relative-caret-position="284">
+              <caret line="71" column="63" lean-forward="true" selection-start-line="71" selection-start-column="63" selection-end-line="71" selection-end-column="63" />
               <folding>
                 <element signature="e#2349#2702#0" expanded="true" />
                 <element signature="e#2701#2702#0" expanded="true" />
               </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="TrackData.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/appfactory/spotify/Pojo/TrackData.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="75">
+              <caret line="10" column="18" lean-forward="false" selection-start-line="10" selection-start-column="13" selection-end-line="10" selection-end-column="18" />
+              <folding />
             </state>
           </provider>
         </entry>
@@ -122,7 +89,7 @@
         </entry>
       </file>
       <file leaf-file-name="ArtistsData.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/appfactory/spotify/pojo/ArtistsData.java">
+        <entry file="file://$PROJECT_DIR$/src/main/java/appfactory/spotify/Pojo/ArtistsData.java">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="60">
               <caret line="8" column="13" lean-forward="false" selection-start-line="8" selection-start-column="13" selection-end-line="8" selection-end-column="13" />
@@ -195,6 +162,8 @@
   <component name="FindInProjectRecents">
     <findStrings>
       <find>doSearch</find>
+      <find>track_</find>
+      <find>Track</find>
     </findStrings>
   </component>
   <component name="Git.Settings">
@@ -2080,7 +2049,7 @@
               <option name="myItemType" value="com.android.tools.idea.navigator.nodes.android.AndroidPsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="pojo" />
+              <option name="myItemId" value="Pojo" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
@@ -2102,7 +2071,7 @@
               <option name="myItemType" value="com.android.tools.idea.navigator.nodes.android.AndroidPsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="interfaces" />
+              <option name="myItemId" value="Interfaces" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
@@ -2214,7 +2183,7 @@
     <property name="android.sdk.path" value="$USER_HOME$/Library/Android/sdk" />
     <property name="android.project.structure.last.selected" value="SDK Location" />
     <property name="android.project.structure.proportion" value="0.15" />
-    <property name="device.picker.selection" value="Nexus_6P_API_25" />
+    <property name="device.picker.selection" value="Pixel_XL_API_26" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$/../.." />
     <property name="UI_DESIGNER_EDITOR_MODE.NlPaletteManager-NlPreviewForm.SHOW" value="false" />
     <property name="sync.plugin.last.upgrade.timestamp" value="1505792079383" />
@@ -2695,12 +2664,16 @@
   <component name="VcsContentAnnotationSettings">
     <option name="myLimit" value="2678400000" />
   </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="Renaming" />
+    <option name="LAST_COMMIT_MESSAGE" value="Renaming" />
+  </component>
   <component name="XDebuggerManager">
     <breakpoint-manager />
     <watches-manager />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/src/main/java/appfactory/spotify/interfaces/ArtistsInterface.java">
+    <entry file="file://$PROJECT_DIR$/src/main/java/appfactory/spotify/Interfaces/ArtistsInterface.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="90">
           <caret line="9" column="22" lean-forward="false" selection-start-line="9" selection-start-column="22" selection-end-line="9" selection-end-column="22" />
@@ -2708,14 +2681,14 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/appfactory/spotify/pojo/ArtistsData.java">
+    <entry file="file://$PROJECT_DIR$/src/main/java/appfactory/spotify/Pojo/ArtistsData.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="60">
           <caret line="8" column="13" lean-forward="false" selection-start-line="8" selection-start-column="13" selection-end-line="8" selection-end-column="13" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/appfactory/spotify/pojo/TrackData.java">
+    <entry file="file://$PROJECT_DIR$/src/main/java/appfactory/spotify/Pojo/TrackData.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="30">
           <caret line="2" column="0" lean-forward="false" selection-start-line="2" selection-start-column="0" selection-end-line="2" selection-end-column="0" />
@@ -2758,7 +2731,7 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/appfactory/spotify/pojo/ArtistsData.java">
+    <entry file="file://$PROJECT_DIR$/src/main/java/appfactory/spotify/Pojo/ArtistsData.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="60">
           <caret line="8" column="13" lean-forward="false" selection-start-line="8" selection-start-column="13" selection-end-line="8" selection-end-column="13" />
@@ -2772,7 +2745,7 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/appfactory/spotify/interfaces/TrackInterface.java">
+    <entry file="file://$PROJECT_DIR$/src/main/java/appfactory/spotify/Interfaces/TrackInterface.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="90">
           <caret line="9" column="27" lean-forward="false" selection-start-line="9" selection-start-column="27" selection-end-line="9" selection-end-column="27" />
@@ -2786,7 +2759,7 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/appfactory/spotify/pojo/TrackData.java">
+    <entry file="file://$PROJECT_DIR$/src/main/java/appfactory/spotify/Pojo/TrackData.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="3630">
           <caret line="293" column="61" lean-forward="false" selection-start-line="293" selection-start-column="61" selection-end-line="293" selection-end-column="61" />
@@ -2987,21 +2960,14 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/appfactory/spotify/interfaces/TrackInterface.java">
+    <entry file="file://$PROJECT_DIR$/src/main/java/appfactory/spotify/Interfaces/TrackInterface.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="90">
           <caret line="9" column="27" lean-forward="false" selection-start-line="9" selection-start-column="27" selection-end-line="9" selection-end-column="27" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/appfactory/spotify/pojo/TrackData.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="30">
-          <caret line="2" column="0" lean-forward="false" selection-start-line="2" selection-start-column="0" selection-end-line="2" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/appfactory/spotify/interfaces/ArtistsInterface.java">
+    <entry file="file://$PROJECT_DIR$/src/main/java/appfactory/spotify/Interfaces/ArtistsInterface.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="90">
           <caret line="9" column="22" lean-forward="false" selection-start-line="9" selection-start-column="22" selection-end-line="9" selection-end-column="22" />
@@ -3071,7 +3037,7 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/appfactory/spotify/pojo/ArtistsData.java">
+    <entry file="file://$PROJECT_DIR$/src/main/java/appfactory/spotify/Pojo/ArtistsData.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="60">
           <caret line="8" column="13" lean-forward="false" selection-start-line="8" selection-start-column="13" selection-end-line="8" selection-end-column="13" />
@@ -3112,10 +3078,18 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/appfactory/spotify/Pojo/TrackData.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="75">
+          <caret line="10" column="18" lean-forward="false" selection-start-line="10" selection-start-column="13" selection-end-line="10" selection-end-column="18" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/appfactory/spotify/activity/ArtistsActivity.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1896">
-          <caret line="158" column="13" lean-forward="true" selection-start-line="158" selection-start-column="13" selection-end-line="158" selection-end-column="13" />
+        <state relative-caret-position="284">
+          <caret line="71" column="63" lean-forward="true" selection-start-line="71" selection-start-column="63" selection-end-line="71" selection-end-column="63" />
           <folding>
             <element signature="e#2349#2702#0" expanded="true" />
             <element signature="e#2701#2702#0" expanded="true" />
