@@ -1,4 +1,4 @@
-package appfactory.spotify.Adapters;
+package appfactory.spotify.adapter;
 
 import android.content.Context;
 import android.content.Intent;
@@ -12,16 +12,16 @@ import com.squareup.picasso.Picasso;
 
 import java.util.List;
 
-import appfactory.spotify.Pojo.Artists_Data;
+import appfactory.spotify.pojo.ArtistsData;
 import appfactory.spotify.R;
-import appfactory.spotify.Activities.Track_Activity;
+import appfactory.spotify.activity.TrackActivity;
 
-public class Artists_Adapter extends ArrayAdapter {
+public class ArtistsAdapter extends ArrayAdapter {
 
-    List<Artists_Data.Item> items;
+    List<ArtistsData.Item> items;
     private Context context;
 
-    public Artists_Adapter(Context context, List<Artists_Data.Item> items) {
+    public ArtistsAdapter(Context context, List<ArtistsData.Item> items) {
         super(context, 0, items);
         this.items = items;
         this.context = context;
@@ -57,7 +57,7 @@ public class Artists_Adapter extends ArrayAdapter {
         view.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Intent i = new Intent(context, Track_Activity.class);
+                Intent i = new Intent(context, TrackActivity.class);
                 i.putExtra("id", items.get(position).getId());
                 i.putExtra("name", items.get(position).getName());
                 context.startActivity(i);
@@ -70,7 +70,7 @@ public class Artists_Adapter extends ArrayAdapter {
 
 
     // Add items to the list, called from Retrofit2 onResponse() method
-    public void addArtist(Artists_Data.Item item) {
+    public void addArtist(ArtistsData.Item item) {
         items.add(item);
     }
 

@@ -1,4 +1,4 @@
-package appfactory.spotify.Activities;
+package appfactory.spotify.activity;
 
 import android.content.Context;
 import android.content.Intent;
@@ -12,10 +12,10 @@ import android.widget.ProgressBar;
 import android.widget.TextView;
 import java.util.ArrayList;
 import java.util.List;
-import appfactory.spotify.Adapters.Track_Adapter;
-import appfactory.spotify.Utilities.Constants;
-import appfactory.spotify.Interfaces.Track_Interface;
-import appfactory.spotify.Pojo.Track_Data;
+import appfactory.spotify.adapter.TrackAdapter;
+import appfactory.spotify.utils.Constants;
+import appfactory.spotify.interfaces.TrackInterface;
+import appfactory.spotify.pojo.TrackData;
 import appfactory.spotify.R;
 import retrofit2.Call;
 import retrofit2.Callback;
@@ -24,11 +24,11 @@ import retrofit2.Retrofit;
 import retrofit2.converter.gson.GsonConverterFactory;
 
 
-public class Track_Activity extends AppCompatActivity {
+public class TrackActivity extends AppCompatActivity {
 
     ListView listView;
-    private ArrayList<Track_Data.Track> data = new ArrayList<>();
-    private Track_Adapter adapter;
+    private ArrayList<TrackData.Track> data = new ArrayList<>();
+    private TrackAdapter adapter;
     static Context ctx;
     private ProgressBar spinner;
 
@@ -61,7 +61,7 @@ public class Track_Activity extends AppCompatActivity {
             ab.setSubtitle(intent.getStringExtra("name"));
         }
         listView = (ListView) findViewById(R.id.track_listview);
-        adapter = new Track_Adapter(this, data);
+        adapter = new TrackAdapter(this, data);
         listView.setAdapter(adapter);
     }
 
@@ -83,16 +83,16 @@ public class Track_Activity extends AppCompatActivity {
                 .addConverterFactory(GsonConverterFactory.create())
                 .build();
 
-        final Track_Interface apiRequest = retrofit.create(Track_Interface.class);
+        final TrackInterface apiRequest = retrofit.create(TrackInterface.class);
 
-        Call<Track_Data> call = apiRequest.getTracks(id); // pass id parameter to the endpoint
-        call.enqueue(new Callback<Track_Data>() {
+        Call<TrackData> call = apiRequest.getTracks(id); // pass id parameter to the endpoint
+        call.enqueue(new Callback<TrackData>() {
             @Override
-            public void onResponse(Call<Track_Data> call, Response<Track_Data> response) {
+            public void onResponse(Call<TrackData> call, Response<TrackData> response) {
                 if (response.isSuccessful()) {
 
                     if (response.body().getTracks() != null) { // check data
-                        final List<Track_Data.Track> tracks = response.body().getTracks();
+                        final List<TrackData.Track> tracks = response.body().getTracks();
                         hideSpinner();
                         if (tracks.size() != 0) {
                             for (int i = 0; i < tracks.size(); i++) {
@@ -109,7 +109,7 @@ public class Track_Activity extends AppCompatActivity {
             }// onResponse
 
             @Override
-            public void onFailure(Call<Track_Data> call, Throwable t) {
+            public void onFailure(Call<TrackData> call, Throwable t) {
                 System.out.println("onFAIL::: " + t);
                 hideSpinner();
                 showMessage("Failed To Get Tracks");

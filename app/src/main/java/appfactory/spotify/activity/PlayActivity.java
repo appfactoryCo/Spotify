@@ -1,4 +1,4 @@
-package appfactory.spotify.Activities;
+package appfactory.spotify.activity;
 
 import android.app.Activity;
 import android.content.Intent;
@@ -22,7 +22,7 @@ import com.squareup.picasso.Picasso;
 
 import appfactory.spotify.R;
 
-public class Play_Activity extends Activity implements
+public class PlayActivity extends Activity implements
         PlayerNotificationCallback, ConnectionStateCallback {
 
     // TODO: Replace with your client ID
@@ -66,7 +66,7 @@ public class Play_Activity extends Activity implements
         ImageView imageView = (ImageView) findViewById(R.id.img);
         String imgUrl = intent.getStringExtra("imgUrl");
         if(imgUrl != null) {
-            Picasso.with(Artists_Activity.ctx).load(imgUrl).into(imageView);
+            Picasso.with(ArtistsActivity.ctx).load(imgUrl).into(imageView);
         }
 
 // Set texts and customize fonts
@@ -99,8 +99,8 @@ public class Play_Activity extends Activity implements
                     @Override
                     public void onInitialized(Player player) {
                         mPlayer = player;
-                        mPlayer.addConnectionStateCallback(Play_Activity.this);
-                        mPlayer.addPlayerNotificationCallback(Play_Activity.this);
+                        mPlayer.addConnectionStateCallback(PlayActivity.this);
+                        mPlayer.addPlayerNotificationCallback(PlayActivity.this);
                         mPlayer.play("spotify:track:" + id); // pass track id
                     }
 

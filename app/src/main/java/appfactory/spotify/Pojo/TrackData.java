@@ -1,4 +1,4 @@
-package appfactory.spotify.Pojo;
+package appfactory.spotify.pojo;
 
 import com.google.gson.annotations.Expose;
 import com.google.gson.annotations.SerializedName;
@@ -8,7 +8,7 @@ import java.util.ArrayList;
 import java.util.List;
 
 
-public class Track_Data implements Serializable{
+public class TrackData implements Serializable{
 
 
     @SerializedName("tracks")

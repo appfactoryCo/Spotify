@@ -1,4 +1,4 @@
-package appfactory.spotify.Activities;
+package appfactory.spotify.activity;
 
 import android.app.Activity;
 import android.content.Intent;
@@ -8,7 +8,7 @@ import android.view.animation.AnimationUtils;
 import android.widget.ImageView;
 import appfactory.spotify.R;
 
-public class Splash_Screen extends Activity {
+public class SplashScreen extends Activity {
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -28,7 +28,7 @@ public class Splash_Screen extends Activity {
             @Override
             public void onAnimationEnd(Animation animation) {
                 finish();
-                Intent i = new Intent(getBaseContext(), Artists_Activity.class);
+                Intent i = new Intent(getBaseContext(), ArtistsActivity.class);
                 startActivity(i);
             }
 

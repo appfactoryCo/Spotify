@@ -1,4 +1,4 @@
-package appfactory.spotify.Activities;
+package appfactory.spotify.activity;
 
 import android.content.Context;
 import android.os.Bundle;
@@ -18,10 +18,10 @@ import android.widget.TextView;
 import java.util.ArrayList;
 import java.util.List;
 
-import appfactory.spotify.Adapters.Artists_Adapter;
-import appfactory.spotify.Utilities.Constants;
-import appfactory.spotify.Interfaces.Artists_Interface;
-import appfactory.spotify.Pojo.Artists_Data;
+import appfactory.spotify.adapter.ArtistsAdapter;
+import appfactory.spotify.utils.Constants;
+import appfactory.spotify.interfaces.ArtistsInterface;
+import appfactory.spotify.pojo.ArtistsData;
 import appfactory.spotify.R;
 import retrofit2.Call;
 import retrofit2.Callback;
@@ -29,16 +29,18 @@ import retrofit2.Response;
 import retrofit2.Retrofit;
 import retrofit2.converter.gson.GsonConverterFactory;
 
-public class Artists_Activity extends AppCompatActivity {
+public class ArtistsActivity extends AppCompatActivity {
 
     private ListView listView;
     private EditText srchField;
-    private ArrayList<Artists_Data.Item> data = new ArrayList<>();
-    private Artists_Adapter adapter;
+    private ArrayList<ArtistsData.Item> data = new ArrayList<>();
+    private ArtistsAdapter adapter;
     public static Context ctx;
     private TextView message;
     private ProgressBar spinner;
     private static String SEARCH_TERM = "";
+
+
 
 
     @Override
@@ -49,9 +51,11 @@ public class Artists_Activity extends AppCompatActivity {
         ctx = this;
 
         initViews();
-        loadJSON();
+        sendAPIRequest();
 
     }// onCreate
+
+
 
 
     // Initialize views
@@ -66,7 +70,7 @@ public class Artists_Activity extends AppCompatActivity {
 
         message = (TextView) findViewById(R.id.message);
         listView = (ListView) findViewById(R.id.srch_listview);
-        adapter = new Artists_Adapter(this, data);
+        adapter = new ArtistsAdapter(this, data);
         listView.setAdapter(adapter);
         srchField = (EditText) findViewById(R.id.srchfield);
         setSrchFieldListeners();
@@ -84,7 +88,7 @@ public class Artists_Activity extends AppCompatActivity {
 
                 if (actionId == EditorInfo.IME_ACTION_DONE) {
                     showSpinner();
-                    doSearch();
+                    searchArtist();
                 }
                 return false;
             }
@@ -117,11 +121,11 @@ public class Artists_Activity extends AppCompatActivity {
 
 
     // When done key pressed
-    public void doSearch() {
+    public void searchArtist() {
 
         // Empty the listview
         data = new ArrayList<>();
-        adapter = new Artists_Adapter(this, data);
+        adapter = new ArtistsAdapter(this, data);
         listView.setAdapter(adapter);
 
         // Get the text entered and pass it to a constant
@@ -131,29 +135,29 @@ public class Artists_Activity extends AppCompatActivity {
             showMessage("Please Enter an Artist");
         } else {
             SEARCH_TERM = srchTerm; // pass the text to a constant
-            loadJSON();
+            sendAPIRequest();
         }
     }
 
 
     // Use Retrofit2 to send a GET request to Spotify API
-    private void loadJSON() {
+    private void sendAPIRequest() {
         Retrofit retrofit = new Retrofit.Builder()
                 .baseUrl(Constants.BASE_URL)
                 .addConverterFactory(GsonConverterFactory.create())
                 .build();
 
-        final Artists_Interface apiRequest = retrofit.create(Artists_Interface.class);
+        final ArtistsInterface apiRequest = retrofit.create(ArtistsInterface.class);
 
-        Call<Artists_Data> call = apiRequest.getArtists(SEARCH_TERM, "artist"); // pass query to the endpoint
-        call.enqueue(new Callback<Artists_Data>() {
+        Call<ArtistsData> call = apiRequest.getArtists(SEARCH_TERM, "artist"); // pass query to the endpoint
+        call.enqueue(new Callback<ArtistsData>() {
             @Override
-            public void onResponse(Call<Artists_Data> call, Response<Artists_Data> response) {
+            public void onResponse(Call<ArtistsData> call, Response<ArtistsData> response) {
 
                 if (response.isSuccessful()) {
 
                     if (response.body().getArtists().getItems() != null) { // check data
-                        final List<Artists_Data.Item> items = response.body().getArtists().getItems();
+                        final List<ArtistsData.Item> items = response.body().getArtists().getItems();
                         hideSpinner();
                         if (items.size() != 0) {
                             for (int i = 0; i < items.size(); i++) {
@@ -170,7 +174,7 @@ public class Artists_Activity extends AppCompatActivity {
             }// end onResponse
 
             @Override
-            public void onFailure(Call<Artists_Data> call, Throwable t) {
+            public void onFailure(Call<ArtistsData> call, Throwable t) {
                 System.out.println("onFAIL::: " + t);
                 hideSpinner();
                 showMessage("Failed To Get Artists");

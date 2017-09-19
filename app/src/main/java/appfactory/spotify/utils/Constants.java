@@ -1,4 +1,4 @@
-package appfactory.spotify.Utilities;
+package appfactory.spotify.utils;
 
 
 public class Constants {

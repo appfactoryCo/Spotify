@@ -12,7 +12,7 @@
         android:theme="@style/AppTheme">
 
         <activity
-            android:name=".Activities.Play_Activity"
+            android:name=".activity.PlayActivity"
             android:theme="@android:style/Theme.Dialog"/>
 
         <!-- Needed for LoginActivity to work -->
@@ -22,7 +22,7 @@
 
 
         <activity
-            android:name=".Activities.Artists_Activity"
+            android:name=".activity.ArtistsActivity"
             android:windowSoftInputMode="adjustPan"
             android:launchMode="singleTop"
              >
@@ -34,12 +34,12 @@
 
 
         <activity
-            android:name=".Activities.Track_Activity"
-            android:parentActivityName=".Activities.Artists_Activity"
+            android:name=".activity.TrackActivity"
+            android:parentActivityName=".activity.ArtistsActivity"
             android:label="@string/top10"
              />
 
-        <activity android:name=".Activities.Splash_Screen">
+        <activity android:name=".activity.SplashScreen">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN"/>
                 <category android:name="android.intent.category.LAUNCHER"/>
